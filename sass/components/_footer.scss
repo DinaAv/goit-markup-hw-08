@@ -1,0 +1,204 @@
+.footer {
+    background: #2f303a;
+    padding: 60px 0;
+  }
+  
+  .contact-list {
+    margin-top: 20px;
+  }
+  
+  .contact-list-item,
+  .contact-list-item a {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: 0.5s;
+    margin-bottom: 9px;
+  }
+  
+  .contact-list-item,
+  .contact-list-item a:hover {
+    color: #ffffff;
+  }
+  
+  .contact-list-item:first-child {
+    color: #ffffff;
+  }
+  
+  .footer-wrapper {
+    display: flex;
+    gap: 70px;
+
+    @media screen and (min-width: 480px) {
+      flex-direction: column;
+    /* justify-content: start; */
+    align-items: center;
+    text-align: center;
+    }
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      align-items: flex-start;
+      text-align: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      text-align: left;
+      flex-wrap: nowrap;
+    }
+  }
+
+  
+  
+  .footer-soc-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .footer-soc-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-soc-item + .footer-soc-item {
+    margin-left: 10px;
+  }
+  
+  .footer-soc-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+  
+  .footer-soc-icon {
+    fill: #ffffff;
+    width: 20px;
+    height: 20px;
+    transition: 0.5s;
+  }
+  
+  .footer-soc-link:hover {
+    background-color: #2196f3;
+  }
+  
+  .footer-soc-link:hover .footer-soc-icon {
+    fill: #ffffff;
+  }
+  
+  .footer-soc-link:focus {
+    background-color: #2196f3;
+  }
+  
+  .footer-soc-link:focus .footer-soc-icon {
+    fill: #ffffff;
+  }
+  
+  .footer-label {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  
+  .footer-input {
+    margin-top: 20px;
+    width: 358px;
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: transparent;
+    color: #ffffff;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 480px) {
+      width: 100%;
+    }
+    @media screen and (min-width: 768px) {
+      width: 450px;
+      
+    }
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
+  }
+  
+  .footer-input:focus {
+    border: 1px solid #2196f3;
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .footer-submit {
+    padding: 10px 29px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    /* identical to box height, or 188% */
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    background: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .input-wrapper {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    @media screen and (min-width: 480px) {
+      flex-direction: column;
+    align-items: center;
+    }
+    @media screen and (min-width: 768px) {
+      flex-direction: column;
+    align-items: center;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    align-items: baseline;
+    gap: 12px;
+    flex-direction: row;
+    }
+  }
+
+  .footer-form-wrapper {
+    @media screen and (min-width: 480px) {
+      width: 100%;
+    }
+    @media screen and (min-width: 768px) {
+      width: 100%;
+    }
+    @media screen and (min-width: 1200px) {
+      
+    }
+  }

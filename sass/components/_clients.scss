@@ -1,0 +1,120 @@
+.clients-title {
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+  
+    color: #212121;
+  }
+  
+  .clients-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    @media screen and (min-width: 480px) {
+      flex-wrap: wrap;
+    }
+    @media screen and (min-width: 768px) {
+      flex-wrap: wrap;
+    }
+    @media screen and (min-width: 1200px) {
+      
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .client-card + .client-card {
+      margin-left: 30px;
+    }
+  }
+  
+  
+
+  @media screen and (min-width: 480px) {
+    .client-card {
+      width: calc(100% / 2 - 15px);
+    }
+    
+  }
+  @media screen and (min-width: 768px) {
+    .client-card {
+      width: calc(100% / 3 - 15px);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .client-card {
+      width: calc(100% / 7 - 15px);
+    }
+  }
+  
+
+  // .client-card {
+  //   @media screen and (min-width: 480px) {
+  //     width: calc(100% / 2 - 20px);
+  //   margin-left: 20px;
+  //   }
+  //   @media screen and (min-width: 768px) {
+  //     width: calc(100% / 2 - 20px);
+  //   margin-left: 20px;
+  //   }
+  //   @media screen and (min-width: 1200px) {
+     
+  //   }
+  // }
+  
+  .client-wrapper {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    @media screen and (min-width: 480px) {
+      margin-bottom: 30px;
+      width: 100%;
+    }
+    @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
+      width: 100%;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
+  }
+  
+  .client-logo path {
+    fill: #afb1b8;
+    transition: 0.5s;
+  }
+  
+.client-link {
+	&:hover {
+		.client-wrapper {
+			border: 1px solid #2196f3;
+		}
+		.client-logo {
+			path {
+				fill: #2196f3;
+			}
+		}
+	}
+	&:focus {
+		.client-wrapper {
+			border: 1px solid #2196f3;
+		}
+		.client-logo {
+			path {
+				fill: #2196f3;
+			}
+		}
+	}
+}

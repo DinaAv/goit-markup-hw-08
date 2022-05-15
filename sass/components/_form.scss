@@ -1,0 +1,221 @@
+.modal-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 12px;
+  }
+  
+  .modal-input {
+    display: block;
+    width: 448px;
+    height: 40px;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    margin-top: 4px;
+    @media screen and (min-width: 480px) {
+      width: 100%;
+    }
+    @media screen and (min-width: 768px) {
+      width: 100%;
+    }
+    @media screen and (min-width: 1200px) {
+      
+    }
+  }
+  
+  .modal-close {
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .modal-close:hover svg path {
+    fill: #2196f3;
+  }
+  
+  .name {
+    background: url("../images/form-icons/person-black-18dp\ 1.svg") no-repeat
+      scroll 15px 11px;
+    padding-left: 42px;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .tel {
+    background: url("../images/form-icons/phone-black-18dp\ 1.svg") no-repeat
+      scroll 15px 11px;
+    padding-left: 42px;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .mail {
+    background: url("../images/form-icons/email-black-18dp\ 1.svg") no-repeat
+      scroll 15px 11px;
+    padding-left: 42px;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .modal-label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    letter-spacing: 0.01em;
+    color: #757575;
+  }
+  
+  .comment {
+    height: 120px;
+  }
+  
+  textarea::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+  
+  textarea {
+    padding: 12px 16px;
+    resize: none;
+  }
+  
+  .name:focus,
+  .tel:focus,
+  .mail:focus,
+  .comment:focus {
+    border: 1px solid #2196f3;
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .name:focus {
+    background: url("../images/form-icons/person-blue-18dp\ 1.svg") no-repeat
+      scroll 15px 11px;
+  }
+  
+  .tel:focus {
+    background: url("../images/form-icons/phone-blue-18dp\ 1.svg") no-repeat
+      scroll 15px 11px;
+  }
+  
+  .mail:focus {
+    background: url("../images/form-icons/email-blue-18dp\ 1.svg") no-repeat
+      scroll 15px 11px;
+  }
+  
+  .modal-link {
+    color: #2196f3;
+    text-decoration: underline;
+  }
+  
+  .accept-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
+  
+  .terms {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    letter-spacing: 0.03em;
+    color: #757575;
+    text-align: center;
+    margin-top: 20px;
+    @media screen and (min-width: 480px) {
+      font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+letter-spacing: 0.03em;
+    }
+    @media screen and (min-width: 768px) {
+      font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+letter-spacing: 0.03em;
+    }
+    @media screen and (min-width: 1200px) {
+      
+    }
+  }
+  
+  .terms-link {
+    color: #2196f3;
+    transition: 0.5s;
+    text-decoration: underline;
+  }
+  
+  .checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .checkbox + label {
+    display: flex;
+    align-items: center;
+    user-select: none;
+    justify-content: center;
+  }
+  
+  .checkbox + label::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid #000000;
+    margin-right: 8px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.5s;
+    border-radius: 2px;
+  }
+  
+  .checkbox:checked + label::before {
+    transition: 0.5s;
+    background-image: url("../images/form-icons/icon-check.svg");
+    border: none;
+  }
+  
+  .submit {
+    padding: 10px 55px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    /* identical to box height, or 188% */
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    background: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .submit-wrapper {
+    text-align: center;
+    margin-top: 30px;
+  }
