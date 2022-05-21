@@ -6,14 +6,17 @@
     @media screen and (min-width: 480px) {
       flex-wrap: wrap;
     justify-content: flex-start;
+    margin-bottom: 30px;
     }
     @media screen and (min-width: 768px) {
       flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 30px;
     }
     @media screen and (min-width: 1200px) {
       display: flex;
     justify-content: center;
+    margin-bottom: 50px;
     }
   }
   

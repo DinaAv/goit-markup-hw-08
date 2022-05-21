@@ -7,6 +7,52 @@
     letter-spacing: 0.03em;
   
     color: #212121;
+    @media screen and (min-width: 480px) {
+      font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 33px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #212121;
+    }
+    @media screen and (min-width: 768px) {
+      font-weight: 700;
+font-size: 28px;
+line-height: 33px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #212121;
+    }
+    @media screen and (min-width: 1200px) {
+      text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+  
+    color: #212121;
+    }
+  }
+
+  .clients {
+    
+    @media screen and (min-width: 480px) {
+      padding: 30px 0;
+    }
+    @media screen and (min-width: 768px) {
+      padding: 30px 0;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 60px 0;;
+    }
   }
   
   .clients-list {
@@ -88,6 +134,7 @@
     }
     @media screen and (min-width: 1200px) {
       width: 170px;
+      margin-bottom: 0;
     }
   }
   
