@@ -1,3 +1,16 @@
+.portfolio {
+  padding-bottom: 64px;
+  @media screen and (min-width: 480px) {
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 64px;
+  }
+}
+
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;

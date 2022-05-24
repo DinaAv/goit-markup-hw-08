@@ -45,13 +45,13 @@ color: #212121;
   .clients {
     
     @media screen and (min-width: 480px) {
-      padding: 30px 0;
+      padding: 60px 0 30px 0;
     }
     @media screen and (min-width: 768px) {
-      padding: 30px 0;
+      padding: 60px 0 30px 0;
     }
     @media screen and (min-width: 1200px) {
-      padding: 60px 0;;
+      padding: 60px 0 94px 0;;
     }
   }
   
@@ -61,9 +61,11 @@ color: #212121;
     margin-top: 50px;
     @media screen and (min-width: 480px) {
       flex-wrap: wrap;
+      margin-top: 30px;
     }
     @media screen and (min-width: 768px) {
       flex-wrap: wrap;
+      margin-top: 30px;
     }
     @media screen and (min-width: 1200px) {
       
@@ -71,6 +73,7 @@ color: #212121;
     justify-content: space-between;
     margin-top: 50px;
     flex-wrap: wrap;
+    margin-top: 50px;
     }
   }
 
